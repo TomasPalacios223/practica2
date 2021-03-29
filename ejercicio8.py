@@ -20,10 +20,10 @@ diccionario={}
 for i in range (len(nombres_1)):
     diccionario[nombres_1[i]]= int(notas1[i])+ int(notas2[i])
 
-print(f'     nombre    evaluacion1     evaluacion2           total')
+print(f'      nombre         evaluacion1         evaluacion2         total')
 
 cont=0
 for nombre in range(len (nombres_1)):
-    print('%2s' % cont,' %2s ' % nombres_1[nombre].ljust(9),'%12s ' % notas1[nombre].ljust(9),' %12s' % notas2[nombre].ljust(9) ,' %12s ' %  diccionario[nombres_1[nombre]])
+    print('%6s' % cont, nombres_1[nombre].ljust(15),'%8s ' % notas1[nombre].ljust(9),' %12s' % notas2[nombre] ,' %16s ' %  diccionario[nombres_1[nombre]])
     cont+=1
 
